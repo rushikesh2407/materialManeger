@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite3</th></tr>
+<tr><td><a href="#t0">done.mm.qa.testcases</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">613,099</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite3</th></tr></tbody><tbody id="t0"><tr><th colspan="4">done.mm.qa.testcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">done.mm.qa.testcases.ReceiptTest</td><td><a href="#m0">Receipt</a></td><td rowspan="1">1636022858651</td><td rowspan="1">54091</td></tr><tr class="failedodd"><td rowspan="1">done.mm.qa.testcases.ShortCloseTest</td><td><a href="#m1">ShortClose</a></td><td rowspan="1">1636022984421</td><td rowspan="1">31154</td></tr><tr><th colspan="4">done.mm.qa.testcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">done.mm.qa.testcases.AddMaterialTest</td><td><a href="#m2">Addmaterial</a></td><td rowspan="1">1636023230062</td><td rowspan="1">23094</td></tr><tr class="passedodd"><td rowspan="1">done.mm.qa.testcases.AddSupplierTest</td><td><a href="#m3">AddSupplier</a></td><td rowspan="1">1636023198449</td><td rowspan="1">20237</td></tr><tr class="passedeven"><td rowspan="1">done.mm.qa.testcases.CreatePoTest</td><td><a href="#m4">CreatePO</a></td><td rowspan="1">1636022722248</td><td rowspan="1">73120</td></tr><tr class="passedodd"><td rowspan="1">done.mm.qa.testcases.CreateRfpTest</td><td><a href="#m5">CreateRfp</a></td><td rowspan="1">1636022686322</td><td rowspan="1">22510</td></tr><tr class="passedeven"><td rowspan="1">done.mm.qa.testcases.DirectGrnTest</td><td><a href="#m6">DirectGrn</a></td><td rowspan="1">1636023151526</td><td rowspan="1">33983</td></tr><tr class="passedodd"><td rowspan="1">done.mm.qa.testcases.HambergerMenuTest</td><td><a href="#m7">Hamburgermenu</a></td><td rowspan="1">1636023079018</td><td rowspan="1">59982</td></tr><tr class="passedeven"><td rowspan="1">done.mm.qa.testcases.IssueToPrTest</td><td><a href="#m8">IssueToPr</a></td><td rowspan="1">1636023028000</td><td rowspan="1">38477</td></tr><tr class="passedodd"><td rowspan="1">done.mm.qa.testcases.PaymentRecordTest</td><td><a href="#m9">PaymentRecord</a></td><td rowspan="1">1636022927543</td><td rowspan="1">42700</td></tr><tr class="passedeven"><td rowspan="1">done.mm.qa.testcases.RaisePrTest</td><td><a href="#m10">RaisePR</a></td><td rowspan="1">1636022654846</td><td rowspan="1">18411</td></tr><tr class="passedodd"><td rowspan="1">done.mm.qa.testcases.ReceiptAgaistPoTest</td><td><a href="#m11">ReceiptAgaistPo</a></td><td rowspan="1">1636022809085</td><td rowspan="1">36512</td></tr></tbody>
+</table>
+<h2>done.mm.qa.testcases</h2><h3 id="m0">done.mm.qa.testcases.ReceiptTest#Receipt</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/menu-item[1]/a[1]/button[1]/span[1]/div[1]/div[1]/span[contains(text(),&apos;Home&apos;)]&quot;}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;BuildSupply-PC9&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-31-generic&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48fde0fce925d1a4326aea1d81e05c29, findElement {using=xpath, value=//div/menu-item[1]/a[1]/button[1]/span[1]/div[1]/div[1]/span[contains(text(),&apos;Home&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.CvNpZc}, goog:chromeOptions: {debuggerAddress: localhost:33611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33611/devtoo..., se:cdpVersion: 93.0.4577.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 48fde0fce925d1a4326aea1d81e05c29
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at done.mm.qa.pages.Receipt_Shortclose_Payment.receipt(Receipt_Shortclose_Payment.java:124)
+	at done.mm.qa.testcases.ReceiptTest.Receipt(ReceiptTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">done.mm.qa.testcases.ShortCloseTest#ShortClose</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1280, 125). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=93.0.4577.63)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;BuildSupply-PC9&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-31-generic&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d1e50e08fa5feb2705b60cb9fb0b872, clickElement {id=d97f60e0-54e1-470e-9ee2-c5629022eda0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.AWuwEb}, goog:chromeOptions: {debuggerAddress: localhost:46201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46201/devtoo..., se:cdpVersion: 93.0.4577.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (1d1e50e08fa5feb2705b60cb9fb0b872)] -&gt; xpath: //span[contains(text(),&apos;Short Close&apos;)]]
+Session ID: 1d1e50e08fa5feb2705b60cb9fb0b872
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:414)
+	at com.sun.proxy.$Proxy20.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at done.mm.qa.pages.Receipt_Shortclose_Payment.Shortclose(Receipt_Shortclose_Payment.java:218)
+	at done.mm.qa.testcases.ShortCloseTest.ShortClose(ShortCloseTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">done.mm.qa.testcases.AddMaterialTest#Addmaterial</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">done.mm.qa.testcases.AddSupplierTest#AddSupplier</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">done.mm.qa.testcases.CreatePoTest#CreatePO</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">done.mm.qa.testcases.CreateRfpTest#CreateRfp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">done.mm.qa.testcases.DirectGrnTest#DirectGrn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">done.mm.qa.testcases.HambergerMenuTest#Hamburgermenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">done.mm.qa.testcases.IssueToPrTest#IssueToPr</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">done.mm.qa.testcases.PaymentRecordTest#PaymentRecord</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">done.mm.qa.testcases.RaisePrTest#RaisePR</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">done.mm.qa.testcases.ReceiptAgaistPoTest#ReceiptAgaistPo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

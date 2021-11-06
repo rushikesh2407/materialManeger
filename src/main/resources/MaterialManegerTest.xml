@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite3" verbose="1">
+	<listeners>
+		<listener
+			class-name="done.mm.qa.ExtentReportListner.ExtentReporterNG" />
+	</listeners>
+	<test name="done.mm.qa.testcases">
+		<classes>
+
+			<class name="done.mm.qa.testcases.RaisePrTest" />
+			<class name="done.mm.qa.testcases.CreateRfpTest" />
+			<class name="done.mm.qa.testcases.CreatePoTest" />
+			<class name="done.mm.qa.testcases.ReceiptAgaistPoTest" />
+			<class name="done.mm.qa.testcases.ReceiptTest" />
+			<class name="done.mm.qa.testcases.PaymentRecordTest" />
+			<class name="done.mm.qa.testcases.ShortCloseTest" />
+			<class name="done.mm.qa.testcases.RaisePrTest" />
+			<class name="done.mm.qa.testcases.IssueToPrTest" />
+			<class name="done.mm.qa.testcases.HambergerMenuTest" />
+			<class name="done.mm.qa.testcases.DirectGrnTest" />
+			<class name="done.mm.qa.testcases.AddSupplierTest" />
+			<class name="done.mm.qa.testcases.AddMaterialTest" />
+		</classes>
+	</test>
+</suite>
