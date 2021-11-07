@@ -26,7 +26,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"materialManeger/src/test/java/done/mm/qa/testcases/config.properties");
+					"/src/test/java/done/mm/qa/testcases/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
