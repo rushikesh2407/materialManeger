@@ -21,7 +21,7 @@ public class TestBase {
 	public static WebDriverWait wait ;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-
+        public String path=""
 	public TestBase() {
 		try {
 			prop = new Properties();
@@ -40,10 +40,10 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/mm3/src/main/java/done/mm/qa/ok/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","./src/main/java/done/mm/qa/ok/chromedriver");
 			driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/mm3/src/main/java/done/mm/qa/ok/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./src/main/java/done/mm/qa/ok/chromedriver");
 			driver = new ChromeDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);
