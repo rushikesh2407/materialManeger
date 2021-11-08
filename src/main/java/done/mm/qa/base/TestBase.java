@@ -21,7 +21,7 @@ public class TestBase {
 	public static WebDriverWait wait ;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-        public String path=""
+        
 	public TestBase() {
 		try {
 			prop = new Properties();
