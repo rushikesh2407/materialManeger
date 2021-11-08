@@ -40,10 +40,10 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"chromedriver");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");
 			driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
 			driver = new ChromeDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);
