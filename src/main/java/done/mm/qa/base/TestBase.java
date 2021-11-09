@@ -43,7 +43,7 @@ public class TestBase {
 			WebDriverManager.firefoxdriver().setup();
 			 driver = new FirefoxDriver();
 		} else {
-			WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.firefoxdriver().browserVersion("91.0.2").setup();
 			 driver = new FirefoxDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);
