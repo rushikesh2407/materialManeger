@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import done.mm.qa.util.TestUtil;
 import done.mm.qa.util.WebEventListener;
 
@@ -40,11 +40,11 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver","/home/buildsupply/Desktop/fg/ok/chromedriver");
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			 driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver","/home/buildsupply/Desktop/fg/ok/chromedriver");
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			 driver = new ChromeDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
