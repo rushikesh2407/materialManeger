@@ -40,11 +40,11 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
+			WebDriverManager.firefoxdriver().setup();
+			 driver = new FirefoxDriver();
 		} else {
-			WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
+			WebDriverManager.firefoxdriver().setup();
+			 driver = new FirefoxDriver();
 		}
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
