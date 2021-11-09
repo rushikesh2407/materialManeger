@@ -44,8 +44,10 @@ public class TestBase {
 			 driver = new FirefoxDriver();
 		} else {
 			
-			WebDriverManager.firefoxdriver().browserVersion("91.0.2").setup();
-			 driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "geckodriver");
+DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+capabilities.setCapability("marionette",true);
+driver= new FirefoxDriver(capabilities);
 			
 			
 		}
