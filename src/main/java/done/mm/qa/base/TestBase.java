@@ -43,9 +43,12 @@ public class TestBase {
 			WebDriverManager.firefoxdriver().browserVersion("91.0.2").setup();
 			 driver = new FirefoxDriver();
 		} else {
+			WebDriverManager.chromedriver().browserVersion("93.0.4577.63").setup();
+			 driver = new ChromeDriver();
+// 			WebDriverManager.firefoxdriver().browserVersion("91.0.2").setup();
+// 			 driver = new FirefoxDriver();
 			
-			WebDriverManager.firefoxdriver().browserVersion("91.0.2").setup();
-			 driver = new FirefoxDriver();
+			
 		}
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
