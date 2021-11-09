@@ -45,7 +45,7 @@ public class TestBase {
 		} else {
 			
 		
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "geckodriver");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "/geckodriver");
         driver = new FirefoxDriver();
 			
 		}
