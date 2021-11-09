@@ -44,11 +44,9 @@ public class TestBase {
 			 driver = new FirefoxDriver();
 		} else {
 			
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "geckodriver");
-DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-capabilities.setCapability("marionette",true);
-driver= new FirefoxDriver(capabilities);
-			
+		
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "geckodriver""D:\\Downloads\\GeckoDriver.exe");
+        driver = new FirefoxDriver();
 			
 		}
 		e_driver = new EventFiringWebDriver(driver);
